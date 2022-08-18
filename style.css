@@ -1,0 +1,280 @@
+body {
+    display:flex; 
+    flex-direction:column;
+    height:100vh; margin:0;
+    background-image: linear-gradient(115deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imagenes/samurai-1.png);
+    background-size: 600px;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-color: black;    
+    background-attachment: fixed;
+}
+
+#logo-alura {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 30px;
+    top: 30px;
+}
+
+.aviso {
+    font-family: 'Share Tech', sans-serif;
+    position: absolute;
+    top: 570px;
+    left: 320px;
+    color: red;
+
+}
+
+.aviso-logo {
+    position: absolute;
+    top: 571px;
+    left: 300px;
+    width: 13px;
+    height: 13px;
+}
+
+#encriptar {
+    font-family: 'Share Tech', sans-serif;
+    font-size: 35px;
+    width: 540px;
+    height: 400px;
+    background: transparent;
+    color: red;
+    position: absolute;
+    top: 150px;
+    left: 200px;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+#encriptar::-webkit-scrollbar {
+    display: none;
+}
+
+#encriptar::placeholder {
+    color: red;
+}
+
+/*Botones*/
+
+.btn-enc0 {
+    font-family: 'Share Tech', sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    position: absolute;
+    width: 250px;
+    height: 40px;
+    top: 600px;
+    left: 150px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: red;
+    border: 2px solid red;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.btn-enc0:hover {
+    background-color: red;
+    color: black;
+}
+
+.btn-dec0 {
+    font-family: 'Share Tech', sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    position: absolute;
+    width: 250px;
+    height: 40px;
+    top: 600px;
+    left: 450px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: red;
+    border: 2px solid red;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.btn-dec0:hover {
+    background-color: red;
+    color: black;
+}
+
+.btn-copy0 {
+    font-family: 'Share Tech', sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    position: absolute;
+    width: 250px;
+    height: 40px;
+    top: 580px;
+    left: 50px;
+    background-color: transparent;
+    color: red;
+    border: 2px solid red;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.btn-copy0:hover {
+    background-color: red;
+    color: black;
+}
+
+#resultado {
+    font-family: 'Share Tech', sans-serif;
+    font-size: 35px;
+    width: 325px;
+    height: 590px;
+    background-color: transparent;
+    color: red;
+    position: absolute;
+    top: 10px;
+    right: 1%;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+#resultado::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    box-sizing: border-box;
+    position: fixed;
+    background-color: transparent;
+    width: 350px;
+    height: 640px;
+    left: 1100px;
+    top: 20px;
+    border: 2px solid red;
+    border-radius: 10px;
+}
+
+.text-enc, .text-des {
+    font-family: 'Share Tech', sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    text-align: center;
+    color: red;
+}
+
+.text-0 {
+    font-family: 'Share Tech', sans-serif;
+    font-size: 2.3em;
+    position: absolute;
+    top: 310px;
+    left: 10px;
+    text-align: center;
+    color: red;
+}
+
+.text-1 {
+    font-family: 'Share Tech', sans-serif;
+    font-size: 1.5em;
+    position: absolute;
+    top: 400px;
+    left: 10px;
+    text-align: center;
+    color: red;
+}
+
+#samurai-1 {
+    position: absolute;
+    bottom: 60%;
+    left: 65px;
+    width: 250px;
+    height: 250px;
+}
+
+#samurai-2 {
+    position: fixed;
+    transform: rotate(-45deg);
+    top: 450px;
+    left: 1150px;
+    width: 250px;
+    height: 250px;
+}
+
+footer {
+    position: relative;
+    left: 10%;
+    margin-top:auto;
+    width: 1200px;
+    min-height:50px;
+    background-color: red;
+}
+
+.alura-logo1 {
+    position: fixed;
+    bottom: 4px;
+    width: 38px;
+    height: 38px;
+}
+
+.desarrollado {
+    font-family: 'Share Tech', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    position: inherit;
+    top: 15px;
+}
+
+.icons {
+    position: fixed;
+    left: 195px;
+    font-size: 2em;
+    bottom: 5px;
+}
+
+.icons a { 
+    color: black;
+    padding: 5px;
+}
+
+/*Responsive*/
+
+@media screen and (max-width:480px) {
+    body {
+        height:100vh; margin:0;
+        background-size: 900px;
+        background-position-y: center;
+    }
+
+    #logo-alura {
+        width: 250px;
+        height: 250px;
+    }
+
+    #encriptar {
+        width: 300px;
+    }
+
+    .container {
+        position: absolute;
+        left: 200px;
+        top: 800px;
+        display: block;
+        width: 100px;
+    }
+
+    footer {
+        position: relative;
+        margin-top: 0;
+        width: 650px;
+    }
+}
